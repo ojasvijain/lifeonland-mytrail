@@ -100,9 +100,9 @@ app.layout = dbc.Container(fluid=True, children=[
             html.Header([
                 html.A('InSync', href='#', className='logo'),
                 html.Ul([
-                    html.Li(dcc.Link('Home', href='https://lifeonland-home-0x5m.onrender.com', className='link', target="_blank")),
+                    html.Li(html.A('Home', href='https://lifeonland-home-0x5m.onrender.com')),
                     html.Li(dcc.Link('My Trail', href='/my-trail', className='active')),
-                    html.Li(dcc.Link('All Trails', href='https://mytrails-page.onrender.com/', className='link', target="_blank")),
+                    html.Li(html.A('All Trails', href='https://mytrails-page.onrender.com/')),
                 ], className='navigation')
             ])
         )
